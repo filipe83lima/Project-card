@@ -1,0 +1,250 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%) 
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+- Weights: 500, 700, 900 
+*/
+
+:root {
+  --primary: #5d5d61;
+  --secondary: #1ae7dd;
+  --tertiary: #43434b;
+  --quaternary: #6f93f7;
+  --quintary: #aaaaaa;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  padding: 60px;
+  overflow: hidden;
+  background-color: #434149;
+}
+
+.container .card:nth-child(2) {
+  margin-left: 0;
+}
+
+.card-title {
+  width: 274px;
+  height: 462px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 1);
+  margin-right: 30px;
+  background: var(--secondary);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card {
+  width: 274px;
+  height: 462px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-shrink: 0;
+  background-color: var(--tertiary);
+  padding: 0px;
+  overflow: hidden;
+  font-size: 10px;
+  position: relative;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 1);
+  margin-left: -110px;
+  transition: 0.4s;
+}
+
+.card:hover {
+  margin-right: 110px;
+  transform: translateY(-25px);
+}
+
+#card-image {
+  width: 100%;
+  display: block;
+}
+
+#card-image img {
+  width: 100%;
+}
+
+#card-content {
+  padding: 30px;
+}
+
+#title-container {
+  text-align: center;
+}
+
+#title {
+  margin-bottom: 10px;
+}
+
+#card-content div {
+  margin-bottom: 29px;
+}
+
+#plan-option {
+  width: 100%;
+  display: flex;
+  align-content: end;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+  padding: 13px;
+  background: var(--primary);
+  border-radius: 10px;
+  height: 50px;
+}
+
+#plan-option a {
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+#plan-option a:hover {
+  filter: brightness(0.9);
+}
+
+#plan-logo img {
+  height: 21px;
+  margin-right: 7px;
+}
+
+#plan-logo {
+  display: flex;
+
+  justify-content: center;
+}
+
+#plan-logo h2 {
+  margin: 0;
+  font-size: 13px;
+  display: flex;
+}
+
+#plan-logo p {
+  margin: 0;
+  font-size: 9px;
+  display: block;
+  color: var(--quintary);
+}
+
+#plan-change-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+}
+
+#plan-change-option a {
+  color: var(--secondary);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 8px;
+}
+
+#plan-change-option a:link {
+  color: rgb(6, 58, 54);
+}
+
+#plan-change-option a:hover {
+  color: var(--quintary);
+}
+
+#buttons button {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 10px;
+  display: block;
+  height: 36px;
+  width: 100%;
+  border-radius: 10px;
+  align-items: center;
+  align-self: center;
+  background: var(--quaternary);
+}
+
+#cancel-order a {
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+#cancel-order a:hover {
+  filter: brightness(0.9);
+}
+
+#cancel-order a {
+  color: rgb(0, 255, 234);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 8px;
+}
+
+#cancel-order a:link {
+  color: rgb(6, 58, 54);
+}
+
+#cancel-order a:hover {
+  color: var(--quintary);
+}
+
+#cancel-order a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+}
