@@ -234,7 +234,7 @@ body {
 }
 
 #cancel-order a:link {
-  color: rgb(6, 58, 54);
+  color: var(--quintary);
 }
 
 #cancel-order a:hover {
